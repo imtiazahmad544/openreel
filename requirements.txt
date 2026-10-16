@@ -1,0 +1,14 @@
+# OpenReel — 100% free dependency stack. No paid service is required.
+# ffmpeg must be installed on the system (apt/brew/choco) — or let the
+# one-click launcher install the bundled static binary via imageio-ffmpeg.
+
+requests>=2.31
+edge-tts>=7.0            # free neural TTS, no API key (word-level timestamps)
+mutagen>=1.47            # audio duration probing (no ffprobe dependency for mp3)
+pillow>=10.0             # image validation / thumbnails
+python-dotenv>=1.0       # .env config
+
+# --- optional ---
+# gradio>=5.0            # web UI  (installed automatically by launcher.py)
+# imageio-ffmpeg         # bundled ffmpeg binary (installed automatically by launcher.py if no system ffmpeg)
+# google-api-python-client, google-auth-oauthlib   # `openreel publish` (YouTube upload)
